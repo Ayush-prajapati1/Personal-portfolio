@@ -20,7 +20,7 @@ const PROJECTS = [
     desc: "A full-stack finance management application featuring JWT authentication, dashboard analytics, income and expense tracking, and secure transaction management.",
     stack: ["React.js", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/Ayush-prajapati1/flowfinance-finance-tracker",
-    demo: "https://your-finance-tracker-demo.com",
+    demo: "https://financetrackflow.netlify.app/",
   },
 
   {
@@ -36,16 +36,16 @@ const PROJECTS = [
 
 const ACHIEVEMENTS = [
   {
-    title: "Consistent DSA Practice",
-    desc: "Continuously solving Data Structures & Algorithms problems to sharpen problem-solving speed and depth ahead of technical interviews.",
+    title: "DSA & Competitive Programming",
+    desc: " Solved 500+ coding problems across LeetCode, CodeChef, and Codeforces while strengthening algorithmic thinking and  problem-solving skills.",
   },
   {
-    title: "Full-Stack Project Delivery",
-    desc: "Independently designed, built, and shipped complete MERN-stack applications from database schema to deployed UI.",
+    title: "Full-Stack Projects",
+    desc: "Built and deployed multiple MERN applications, focusing on clean architecture, responsive UI, authentication, and REST APIs.",
   },
   {
-    title: "Actively Seeking SDE Roles",
-    desc: "Currently pursuing Software Development Engineer internships and full-time opportunities to apply and grow these skills on real teams.",
+    title: "ACPC Coding Contest",
+    desc: " Achieved 2nd Runner-Up in the college-level ACPC Coding Contest, showcasing strong skills in Data Structures, Algorithms, and competitive programming.",
   },
 ];
 
@@ -170,6 +170,15 @@ export default function Portfolio() {
   return (
     <div className="portfolio-root">
       <style>{`
+        html, body, #root {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          min-height: 100%;
+        }
+        body {
+          background: var(--bg);
+        }
         .portfolio-root{
           --bg:#0a0a0f;
           --surface: rgba(255,255,255,0.035);
@@ -192,6 +201,8 @@ export default function Portfolio() {
           font-family:var(--font-body);
           line-height:1.6;
           min-height:100vh;
+          width:100%;
+          min-width:100vw;
           position:relative;
           overflow-x:hidden;
         }
